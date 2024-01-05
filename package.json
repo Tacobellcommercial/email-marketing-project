@@ -1,7 +1,6 @@
 {
   "name": "email-landing-page",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,11 @@
   "bugs": {
     "url": "https://github.com/Tacobellcommercial/email-marketing-project/issues"
   },
-  "homepage": "https://github.com/Tacobellcommercial/email-marketing-project#readme"
+  "homepage": "https://github.com/Tacobellcommercial/email-marketing-project#readme",
+  "description": "",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0"
+  }
 }
