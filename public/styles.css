@@ -1,0 +1,109 @@
+body{
+  margin: 0;
+}
+
+/*HEADER*/
+.header{
+  padding: 7% 15%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("background_sample.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.header h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header h2{
+  font-family:"Roboto", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+  width: 50%;
+}
+
+.buttons{
+  margin-top: 2.5rem;
+}
+
+
+.buttons a{
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffa530;
+  padding: 0.75%;
+  border-radius: 5px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+
+.buttons a:hover{
+  padding: 1%;
+}
+
+/* SUBSCRIBE SECTION */
+
+.subscribe{
+  padding: 3%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+
+.subscribe h1{
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.subscribe p{
+  font-size: 1.25rem;
+  font-weight: 300;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe form{
+  padding: 1%;
+  background-color: #d4d1cd;
+  margin-top: 2.25rem;
+  width: 30%;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe form input{
+  padding: 1%;
+  font-size: 1rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+
+.subscribe form button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  transition: all 0.25s;
+}
+
+
+.subscribe form button:hover{
+  font-size: 1.5rem;
+  cursor: pointer;
+}

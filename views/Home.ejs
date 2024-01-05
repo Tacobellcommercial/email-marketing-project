@@ -1,0 +1,29 @@
+<%- include ("Header") -%>
+<div class="header">
+    <h1>Simple Email Landing Page</h1>
+    <h2>Welcome to this simple email landing page,
+    built to demonstrate my skills in email HTML marketing.</h2>
+    <div class="buttons">
+      <a href="/contact">Contact!</a>
+      <a href="/questions">Questions?</a>
+    </div>
+
+</div>
+
+
+
+<div class="subscribe">
+    <h1>Subscribe to the Newsletter</h1>
+    <p>For unimaginable amounts of joy, and daily updates from our newsletter through email.</p>
+    <form method="post" action="/new-email-subscriber">
+        <h1>Enter your email</h1>
+        <input type="email" name="email" placeholder="Email here..."/>
+        <h1>Enter your first name</h1>
+        <input type="text" name="first_name" placeholder="First name here..."/>
+        <h1>Enter your last name</h1>
+        <input type="text" name="last_name" placeholder="Last name here..."/>
+
+        <button type="submit">Go!</button>
+    </form>
+</div>
+<%- include("Footer") -%>
