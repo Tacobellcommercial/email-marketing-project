@@ -22,7 +22,12 @@ app.get("/", (req, res)=>{
 })
 
 app.get("/home", (req, res)=>{
-  res.render("Home");
+  let passedVariable = req.query.valid
+  if (passedVariable){
+    res.render("Home", {display: "error-message", error: "There was an error submitting you to our newsletter! Please try again later..."})
+  }else{
+    res.render("Home", {display: "hidden", error: "There was an error submitting you to our newsletter! Please try again later..."});
+  }
 })
 
 app.post("/new-email-subscriber", (req, res)=>{
@@ -38,7 +43,7 @@ app.post("/new-email-subscriber", (req, res)=>{
         }
       })
 
-      res.redirect("/home");
+      res.redirect("/home?valid=False");
     }catch{
         res.redirect("/home")
     }

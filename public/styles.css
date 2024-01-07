@@ -2,13 +2,32 @@ body{
   margin: 0;
 }
 
+.error-message{
+  width: 100%;
+  color: #f75757;
+  background-color: #fcc0c0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 1%;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
 /*HEADER*/
+
+
 .header{
-  padding: 7% 15%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("background_sample.jpg");
+  padding: 10% 15%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("background.jpg");
   background-size: cover;
+  background-position: center;
   color: white;
 }
+
 
 .header h1{
   font-family: "Roboto", sans-serif;
@@ -47,44 +66,117 @@ body{
   padding: 1%;
 }
 
+@media (max-width: 1250px){
+  .header h2{
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px){
+  .header h1{
+    font-size: 2rem;
+  }
+
+  .header h2{
+    font-size: 1.25rem;
+    width: 58%;
+  }
+
+  .buttons a{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 760px){
+
+  .header{
+    text-align: center;
+  }
+
+  .header h1{
+    font-size: 1.8rem;
+  }
+
+  .header h2{
+    width: 70%;
+    font-size: 1.15rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons a{
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 500px){
+
+  .header h1{
+    font-size: 1.75rem;
+  }
+
+  .header h2{
+    width: 100%;
+  }
+
+  .buttons{
+    margin-top: 1.25rem;
+  }
+
+  .buttons a{
+    font-size: 0.85rem;
+  }
+}
+
+
 /* SUBSCRIBE SECTION */
 
 .subscribe{
-  padding: 3%;
+  padding: 2%;
   font-family: "Roboto", sans-serif;
   text-align: center;
+  background-color: #fccf77;
 }
 
 
 .subscribe h1{
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.75rem;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .subscribe p{
   font-size: 1.25rem;
-  font-weight: 300;
-  width: 75%;
+  font-weight: 400;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .subscribe form{
   padding: 1%;
-  background-color: #d4d1cd;
+  background-color: #f2ecd8;
   margin-top: 2.25rem;
   width: 30%;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.subscribe form h1{
+  font-size: 2rem;
 }
 
 .subscribe form input{
-  padding: 1%;
+  padding: 1.5%;
   font-size: 1rem;
   border: none;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  width: 75%;
+  border-radius: 8px;
 }
 
 
@@ -92,18 +184,55 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  border-radius: 5%;
+  padding: 3% 9%;
   border: none;
   background-color: white;
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  margin-bottom: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   transition: all 0.25s;
+  font-weight: bold;
 }
 
 
 .subscribe form button:hover{
-  font-size: 1.5rem;
   cursor: pointer;
+  font-size: 1.25rem;
+}
+
+
+@media (max-width: 1250px){
+
+  .subscribe form, .subscribe p{
+    width: 45%;
+  }
+
+  .subscribe form h1{
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 700px){
+  .subscribe form, .subscribe p{
+    width: 75%;
+  }
+}
+
+
+@media (max-width: 400px){
+
+  .subscribe form, .subscribe p{
+    width: 90%;
+  }
+
+  .subscribe h1{
+    font-size: 2.25rem;
+  }
+
+  .subscribe p{
+    font-size: 1rem;
+  }
 }
