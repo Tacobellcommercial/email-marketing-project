@@ -43,9 +43,9 @@ app.post("/new-email-subscriber", (req, res)=>{
         }
       })
 
-      res.redirect("/home?valid=False");
+      res.redirect("/home");
     }catch{
-        res.redirect("/home")
+        res.redirect("/home?valid=False")
     }
   }
 
