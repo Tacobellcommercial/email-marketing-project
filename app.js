@@ -21,6 +21,10 @@ app.get("/", (req, res)=>{
   res.redirect("/home");
 })
 
+app.get("/templates", (req, res)=>{
+  res.render("Templates")
+})
+
 app.get("/home", (req, res)=>{
   let passedVariable = req.query.valid
   if (passedVariable){

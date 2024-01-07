@@ -3,6 +3,18 @@ body{
   overflow-x: hidden;
 }
 
+/*NAVBAR*/
+
+.simple-navbar a{
+  font-size: 1.5rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 1%;
+  display: block;
+}
+
 .error-message{
   width: 100%;
   color: #f75757;
@@ -16,6 +28,12 @@ body{
 
 .hidden{
   display: none;
+}
+
+@media (max-width: 400px){
+  .simple-navbar a{
+    font-size: 1rem;
+  }
 }
 
 /*HEADER*/
@@ -235,5 +253,150 @@ body{
 
   .subscribe p{
     font-size: 1rem;
+  }
+}
+
+
+/* Template Section*/
+
+.template-section{
+  background-color: #fad7af;
+  height: 100vh;
+  padding: 2.5% 0%;
+}
+
+.template-section h1{
+  margin: 0;
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.template-example{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.template-example .logo{
+  background-color: white;
+  width: 100%;
+  /*text-align: center;*/
+}
+
+
+.template-example img{
+  height: 5rem;
+
+}
+
+
+.template-example .main-body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("email_template_background.jpg");
+  font-family: "Playfair Display", sans-serif;
+  padding: 10% 5%;
+  color: white;
+  background-position: bottom;
+}
+
+.template-example .main-body h1{
+  margin: 0;
+}
+
+.template-example .main-body p{
+  margin-bottom: 3rem;
+}
+
+.template-example .main-body a{
+  text-decoration: none;
+  color: white;
+  background-color: #ffa530;
+  font-family: "Roboto", sans-serif;
+  padding: 2.25%;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.template-example .filler-body{
+  background-color: gray;
+  color: white;
+  padding: 5% 1.5%;
+}
+
+.template-example .filler-body h1{
+  margin: 0;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+}
+
+.template-example .filler-body p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 2.25;
+}
+
+.template-example .filler-body a{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  padding: 2.25%;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+
+
+
+@media (max-width: 1150px){
+  .template-example{
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px){
+  .template-example{
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px){
+  .template-example{
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 450px){
+  .template-example .main-body h1{
+    font-size: 1.5rem;
+  }
+
+  .template-example .main-body p{
+    font-size: 0.85rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .template-example .main-body a{
+    font-size: 0.75rem;
+  }
+
+  .template-example .filler-body h1{
+    font-size: 1.75rem;
+  }
+
+  .template-example .filler-body p{
+    font-size: 0.85rem;
+  }
+
+  .template-example .filler-body a{
+    font-size: 0.75rem;
   }
 }
